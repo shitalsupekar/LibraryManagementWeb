@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Registration Page</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+   </head>
+   <body class="container-fluid card" style="width:40rem;">
+      <h2 class="bg-success text-white text-center">User Registration</h2>
+      <form action="registeruser" method="post">
+         <table class="table table-hover">
+            <tr>
+               <td>User Name</td>
+               <td><input type="text" name="userName" required></td>
+            </tr>
+            <tr>
+               <td>Email</td>
+               <td><input type="text" name="email" required></td>
+            </tr>
+            <tr>
+               <td>Mobile</td>
+               <td><input type="text" name="mobile" required></td>
+            </tr>
+            <tr>
+               <td>Date of Birth</td>
+               <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+               <td>City</td>
+               <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+               <td>Gender</td>
+               <td>
+                  <input type="radio" name="gender" value="Male" required> Male
+                  <input type="radio" name="gender" value="Female" required> Female
+               </td>
+            </tr>
+            <tr>
+               <td>Password</td>
+               <td><input type="text" name="password" required></td>
+            </tr>
+            <tr>
+               <td><input type="submit" value="Register"></td>
+               <td><input type="reset" value="Reset"></td>
+            </tr>
+         </table>
+      </form>
+      <p class="text-center">Already have an account? <a href="login.html">Login here</a></p>
+   </body>
+</html>
